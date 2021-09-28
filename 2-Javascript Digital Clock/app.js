@@ -2,18 +2,18 @@ function showTime(){
     var date = new Date();
     var h = date.getHours();
     var m = date.getMinutes()
-    var ss = date.getSeconds();
-    var session = "AM";
-    
+    var s = date.getSeconds();
+    var Session = "AM";
+    // sdşafbhsdaskilpfhsaılfislkhfsafnfğoıhsfnsaifphasn
     if(h < 12){
-        session = "PM";
+        Session = "PM";
     }
     h = (h < 10) ? "0"+h : h;
     m = (m < 10) ? "0"+m : m;
-    ss = (ss < 10) ? "0"+ss : ss;
+    s = (s < 10) ? "0"+s : s;
     
     var clockContent = document.getElementById("MyClockDisplay");
-    clockContent.innerHTML = h + ":" + m + ":" + ss + " " + session;
+    clockContent.innerHTML = h + ":" + m + ":" + s + " " + Session;
 
     setTimeout(showTime,1000)
 }

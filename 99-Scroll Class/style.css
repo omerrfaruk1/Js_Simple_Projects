@@ -1,0 +1,235 @@
+html,body,.wrap,.bg {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align:center;
+  }
+  
+  .wrap {
+    background: #eee;
+  }
+  
+  .bg {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .bg1 {
+    background: yellow;
+  }
+  
+  .bg2 {
+    background: green;
+  }
+  
+  .bg3 {
+    background: #eee;
+  }
+  
+  .bg4 {
+    background: blue;
+  }
+  
+  .group1 .bg1 {
+    opacity: 1;
+  }
+  
+  .group2 .bg2 {
+    opacity: 1;
+  }
+  
+  .group3 .bg3 {
+    opacity: 1;
+  }
+  
+  .group4 .bg4 {
+    opacity: 1;
+  }
+  
+  .center {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    border: 1px solid black;
+  }
+  
+  .clientborder {  
+    position: absolute;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    margin-left: -200px;
+    margin-top: -100px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transition: 1s;
+  }
+  
+  .client,
+  .client_1 {  
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: green;
+    width: 100%;
+    height: 100%;  
+    transition: 1s;
+  }
+  
+  .client_1 {  
+    opacity: 0;
+  }
+  
+  .group0-phase0 .client_1 {
+    top: 160px;
+    opacity: 1;
+  } 
+  
+  .group0-phase0 .client {
+    top: 160px;
+    opacity: 0;
+  } 
+  
+  .group0-phase1 .client_1 {
+    opacity: 0;
+  }
+  
+  .client-menu {
+    height: 20px;
+  }
+  
+  .client-nav {
+    height: 40px;
+    background: yellow;  
+    transition: 1s;
+  }
+  
+  .group0-phase2 .client-nav {
+    height: 20px;
+  }
+  
+  .client-device {  
+    width: 0;
+    height: 0;
+    background: red;
+    transition: 1s;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .group0-phase0 .client-device,
+  .group0-phase1 .client-device {  
+    width: 80px;
+    height: 140px;
+    top: 60px;
+    opacity: 1;
+  }
+  
+  
+  .client-content {  
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 40px;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .group0-phase0 .client-content,
+  .group0-phase1 .client-content {  
+    height: 140px;
+    top: 60px;
+    transition: 1s;
+  }
+  
+  .scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+  }
+  
+  .scroll .bar {
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    right: 4px;
+    top: 80px;
+    background: #999;
+    transition: 1s;
+  }
+  
+  .group0-phase0 .scroll .bar,
+  .group0-phase1 .scroll .bar {
+    top: 0;
+    height: 70px;
+  }
+  
+  .viewport {
+    height: 300px;
+    top: -140px;  
+    transition: 1s;
+    position: absolute;
+    width: 384px;
+  }
+  
+  .group0-phase0 .viewport,
+  .group0-phase1 .viewport {
+    top: 0;
+  }
+  
+  .card {
+    width: 70px;
+    height: 50px;
+    background: #eee;
+    float: left;
+    border: 1px solid red;
+  }
+  
+  .recommend {
+    width: 300px;
+    height: 140px;
+    background: green;
+    float: right;
+    border: 0 none;
+  }
+  
+  .clr {
+    clear: both;
+  }
+  
+  .card-backup {  
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    border: 1px solid red;
+    transition: 1s;
+    top: 140px;
+    right: 24px;
+    background: blue;
+  }
+  
+  .group0-phase3 .card-backup {
+    width: 142px;
+    height: 102px;
+  }
+  
+  .group1 .clientborder {
+    transform: scale(0.6);
+    margin-left: -400px;
+  }
+  

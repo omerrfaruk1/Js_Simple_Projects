@@ -1,0 +1,35 @@
+:root{
+    --bg-white : #fff;
+    --bg-black : rgb(70, 69, 69);
+    --bg-score: rgb(217,83,65);
+    --bg-apple : rgb(197, 93, 93);
+    --bg-snake : rgb(9, 129, 73);
+}
+body {
+    background: var(--bg-black);
+}
+#screen{
+    width:  1240px;
+    height: 545px;
+    background : var(--bg-white);
+}
+#gamePlace{
+    width:  1250px;
+    height: 550px;
+}
+#snake{
+    background: var(--bg-snake);
+    position:absolute;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    transition: all 2s ease-in-out;
+}
+#apple{
+    background: var(--bg-apple);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
